@@ -33,6 +33,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question2{
@@ -40,6 +41,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question3{
@@ -47,6 +49,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question4{
@@ -54,6 +57,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question5{
@@ -61,6 +65,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question6{
@@ -68,6 +73,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question7{
@@ -75,6 +81,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question8{
@@ -82,6 +89,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question9{
@@ -89,6 +97,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question10{
@@ -96,6 +105,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 #question11{
@@ -103,6 +113,7 @@
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:20vh;
+    text-align: center;
 }
 
 .navbar{
@@ -118,4 +129,8 @@
 	text-align: left;
     background-color: #080808;
     width: 100%;
+}
+
+.progress{
+    margin: 20px;
 }
