@@ -167,3 +167,22 @@ function hideTitlePage() {
     }) 
 }
 $(hideTitlePage);
+
+var database = firebase.database().ref();
+
+function save() {
+    var username = $('#username').val();
+    var password = $("#password").val();
+    console.log(username + " " + password);
+
+    var value = {
+        USERNAME: username,
+        PASSWORD: password
+    }
+    database.push(value);
+}
+database.on("child_added", function (rowData) {
+    var row = rowData.val();
+    var username = row.USERNAME;
+    var password = row.PASSWORD;
+});

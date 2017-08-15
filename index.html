@@ -61,7 +61,6 @@
                         <a class="btn btn-primary btn-lg" id="jumbotronBtn" href="#" role="button">Start Now</a>
                     </p>
                 </div>
-
             </div>
         </div>
         <!-- end of grid for title page content -->
@@ -69,23 +68,32 @@
     </div>
     <!-- end of titlepage jumbotron  -->
 
-    <div class="jumbotron jumbotron-fluid" id="secondPage">
-        <!--start of signup jumbotron-->
-        <div class="container">
-            <!--start of signup grid  -->
-            <div class="row signup">
-                <div class="col"></div>
-                <div class="col-md-auto">
+<div class="jumbotron jumbotron-fluid" id="secondPage">
+    <!--start of signup jumbotron-->
+    <div class="container">
+        <!--start of signup grid  -->
+        <div class="row signup">
+            <div class="log-form">
+                <h2>Login to your account</h2>
+                <form>
+                    <input id="username" type="text" title="username" placeholder="Username" />
+                    <input id="password" type="password" title="username" placeholder="Password" />
+                    <button type="submit" onclick="save()" class="btn">Login</button>
+                    <h1>OR</h1>
                     <button type="button" class="btn btn-primary" id="guest">Continue As Guest</button>
-                </div>
-                <div class="col-md-auto">
-                    <button type="button" class="btn btn-primary" id="signup">Sign Up to Save Progress</button>
-                </div>
-                <div class="col"></div>
+                </form>
             </div>
-            <!--end of signup grid  -->
+            <!--end log form -->
+        </div>
+        <!--end of signup grid  -->
+    </div>
+    <div class="container">
+        <div class="col"></div>
+        <div class="col-md-auto">
+            <p1> Remember To Answer Honestly </p1>
         </div>
     </div>
+</div>
     <!-- end of signup jumbotron  -->
 
     <!-- start of questions page-->
@@ -209,7 +217,7 @@
     <!--start of question four-->
     <div class="jumbotron jumbotron-fluid" id="question4">
         <div class="container">
-            <h1>Do you know the difference between early action, early decision, and regular application?</h1>
+            <h1>Do you know the what is early action, early decision, and regular admission?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -220,14 +228,13 @@
                 </div>
                 <div class="col"></div>
             </div>
-
             <div class="row">
                 <!--start of hidden results-->
                 <div class="col-2" id="yes4"></div>
                 <div class="col-8" id="no4">
-                    <h1>hing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                        'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over
-                        the years, sometimes by accident,sometimes on purpose</h1>
+                    <p>Hint: They both let you apply early</p>
+                    <a href="https://professionals.collegeboard.org/guidance/applications/early" class="badge badge">Learn more about early decision/action</a>
+                    <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn4">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -263,9 +270,9 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes5"></div>
                 <div class="col-8" id="no5">
-                    <h1>hing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                        'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over
-                        the years, sometimes by accident,sometimes on purpose</h1>
+                    <p>Hint: There are many depending on colleges.</p>
+                    <a href="https://professionals.collegeboard.org/guidance/applications/early" class="badge badge">Learn more about early decision/action</a>
+                    <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn5">Next</button>
                 </div>
             </div>
@@ -480,7 +487,7 @@
                 <div class="col-4">
                     <h1>THE END</h1>
                 </div>
-                <div class="col-4">h</div>
+                <div class="col-4"></div>
             </div>
             <div class="row">
                 <div class="col"></div>
