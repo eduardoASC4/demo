@@ -20,45 +20,52 @@
             <a class="navbar-brand" href="https://eduardoasc4.github.io/demo/.">Wisdom4College</a>
             <a class="navbar-brand" href="#">Sign in</a>
             <a class="navbar-brand" href="#">Sign up</a>
-            <a class="navbar-brand" href="#">Questions</a>
-            <a class="navbar-brand" href="#">Answers</a>
-            <a class="navbar-brand" href="#">About us</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                More...
+            </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Questions</a>
+                    <a class="dropdown-item" href="#">Answer</a>
+                    <a class="dropdown-item" href="#">Credit</a>
+                    <a class="dropdown-item" href="#">About Us</a>
+                </div>
         </nav>
-    </div>
-    <!-- end of navbar -->
-
-    <!-- start of titlepage jumbotron  -->
-    <div class="jumbotron jumbotron-fluid" id="titlePage">
-        <div class="titlepagecontent">
-            <!--start of grid for title  -->
-            <div class="container">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-md-auto">
-                        <h1 class="t">Wisdom4College</h1>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </div>
-            <!--end of grid for title  -->
-            <!--start of grid for title page content  -->
-            <div class="container">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-md-auto">
-                        <hr class="my-4">
-                        <p class="lead">Need help with college? Wisdom4College is here for you!
-                        </p>
-                        <p>Wisdom4College is a small, easy quiz both for parents and students who are new to the college process. At the end, with the information collected with the questions, we display a series of steps and links for you to get started!</p>
-                        <p class="lead">
-                            <a class="btn btn-primary btn-lg" id="jumbotronBtn" href="#" role="button">Start Now</a>
-                        </p>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </div>
-            <!-- end of grid for title page content -->
         </div>
+        <!-- end of navbar -->
+
+        <!-- start of titlepage jumbotron  -->
+        <div class="jumbotron jumbotron-fluid" id="titlePage">
+            <div class="titlepagecontent">
+                <!--start of grid for title  -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-md-auto">
+                            <h1 class="t">Wisdom4College</h1>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <!--end of grid for title  -->
+                <!--start of grid for title page content  -->
+                <div class="container">
+                    <hr class="my-4">
+                    <p class="lead">Need help with college? Wisdom4College is here for you!
+                    </p>
+                    <p>Wisdom4College is a small, easy quiz both for parents and students who are new to the college process.
+                        At the end, with the information collected with the questions, we display a series of steps and links
+                        for you to get started!</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" id="jumbotronBtn" href="#" role="button">Start Now</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of grid for title page content -->
+    </div>
     </div>
     <!-- end of titlepage jumbotron  -->
 
@@ -102,8 +109,10 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes1"></div>
                 <div class="col-8" id="no1">
-                    <p1><p>Here is the answer</p>
-                    <a href="#" class="badge badge-primary">Primary</a></p1>
+                    <p>Hint: You can apply to colleges throught their website and filling out their application or the common
+                        app.</p>
+                    <a href="http://www.commonapp.org/" class="badge badge">Learn more about the Common app</a>
+                    <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -139,9 +148,10 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes2"></div>
                 <div class="col-8" id="no2">
-                    <h1>hing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                        'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over
-                        the years, sometimes by accident,sometimes on purpose</h1>
+                    <p>Hint: There are various degrees, but the B.A. (Bachelor of Arts) and B.S. (Bachelor of Science) are the
+                        most popular ones.</p>
+                    <a href="https://bigfuture.collegeboard.org/find-colleges/college-101/quick-guide-your-college-degree-options" class="badge badge">Learn more about college degrees</a>
+                    <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn2">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -177,9 +187,9 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes3"></div>
                 <div class="col-8" id="no3">
-                    <h1>hing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                        'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over
-                        the years, sometimes by accident,sometimes on purpose</h1>
+                    <p>Hint: Majors are the ones which you will get the most invested on.</p>
+                    <a href="http://classroom.synonym.com/major-vs-minor-college-degrees-4157.html" class="badge badge">Learn more about majors and minors</a>
+                    <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn3">Next</button>
                 </div>
                 <div class="col-2"></div>
