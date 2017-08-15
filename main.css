@@ -2,10 +2,14 @@
     height: 100vh;
 }
 
+.titlepagecontent{
+    padding-top:15vh;
+}
+
+
 #titlePage{
     height: 100vh;
     text-align: center;
-    padding: 20vh;
     background-image: url(https://unsplash.it/1000);
     background-size:cover;
     color: red;
@@ -15,10 +19,13 @@
 #secondPage{
     height: 100vh;
     text-align: center;
-    padding: 35vh;
     background-image: url(https://unsplash.it/1100);
     background-size:cover;
     margin-bottom: -0vh;
+}
+
+.signup{
+    padding-top:15vh;
 }
 
 #question1{
@@ -88,7 +95,8 @@
 }
 
 .navbar{
-    background-color: rgba(255,255,255,.5)
+    background-color: rgba(255,255,255,.5);
+     width: 100%; 
 }
 
 .footer {
@@ -97,5 +105,6 @@
 	margin-top: -53px;
 	color: #99979c;
 	text-align: left;
-	background-color: #080808;
+    background-color: #080808;
+    width: 100%;
 }
