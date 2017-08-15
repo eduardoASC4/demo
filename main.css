@@ -9,6 +9,7 @@
     background-image: url(https://unsplash.it/1000);
     background-size:cover;
     color: red;
+    margin-bottom: -0vh;  
 }
 
 #secondPage{
@@ -17,23 +18,30 @@
     padding: 35vh;
     background-image: url(https://unsplash.it/1100);
     background-size:cover;
-}
-
-.questions{
-    height: 100vh;
-    text-align: center;
+    margin-bottom: -0vh;
 }
 
 #question1{
     background-image: url(https://unsplash.it/900);
     background-size:cover;
+    margin-bottom: -0vh;
 }
 
 #question2{
     background-image: url(https://unsplash.it/950);
     background-size:cover;
+    margin-bottom: -0vh;
 }
 
 .navbar{
     background-color: rgba(255,255,255,.5)
+}
+
+.footer {
+	padding-top: 10px;
+	padding-bottom: 3px;
+	margin-top: -53px;
+	color: #99979c;
+	text-align: left;
+	background-color: #080808;
 }
