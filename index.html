@@ -37,6 +37,7 @@
             <a class="navbar-brand" href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="About Us" data-content="We are students part of the All Star Code Summer Intensive of 2017 and this is our final 'demo-day' project. Our names are Eduardo, Ifte and Malaki and we hope you find this useful.">About Us</a>
             <a class="navbar-brand" href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Credits" data-content="All of this was possibble through the All Star Code program and our instructors. All information was derived using our own minds or through the links provided on each question.">Credits</a>
             <a class="navbar-brand" href="#" id="signin">Sign in</a>
+            <a class="navbar-brand" href="#" id="sign-out">Sign Out</a>
             <a class="navbar-brand" href="#" id="deadlines">Deadlines</a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -73,17 +74,17 @@
     <div class="jumbotron-fluid" id="secondPage">
         <div class="container">
             <div class="log-form">
-                <h1 class="display-3">Login to your account</h1>
+                <h1 class="display-3" id="logintitle">Login to your account</h1>
                 <!-- start of log form -->
                 <h2>
                     <form>
                         <input id="email" type="text" placeholder="Email..." />
                         <input id="password" type="password" placeholder="Password..." />
                         <button type="submit" onclick="save()" class="btn" id="sign-in">Login</button>
-                        <h1>OR</h1>
+                        <h1>or</h1>
                         <button type="button" class="btn btn-primary" id="guest">Continue As Guest</button>
                     </form>
-                    <p1 id="t2"> Remember To Answer Honestly </p1>
+                    <p1 id="t2">Don't forget to answer honestly!</p1>
                 </h2>
             </div>
             <!--end log form -->
@@ -497,36 +498,40 @@
     <!--end of question ten-->
 
     <!-- start of last page  -->
-    <div class="jumbotron jumbotron-fluid" id="question11">
+    <div class="jumbotron-fluid" id="question11">
         <div class="container">
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <h1>THE END</h1>
-                </div>
-                <div class="col-4"></div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-md-auto">
-                    <iframe src="https://calendar.google.com/calendar/embed?src=4viirlf6cosro8a9lg6i48496s%40group.calendar.google.com&ctz=America/New_York"
-                        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                    <div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-            </div>
-
+            <h1>THE END</h1>
             <!--start of progress bar  -->
             <div class="progress">
                 <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
                     style="width: 100%">100%</div>
             </div>
             <!--end of progress bar  -->
+            <h4>Heres what you should do next1</h4>
+            <h4>Check out all the answers here2</h4>
+            <h4>Check out all the answers here3</h4>
+            <h4>Check out all the answers here4</h4>
+            <h4>Check out all the answers here5</h4>
+            <h4>Check out all the answers here6</h4>
+            <h4>Check out all the answers here7</h4>
+            <h4>Check out all the answers here8</h4>
+            <h4>Check out all the answers here9</h4> 
+            <h4>Check out all the answers here10</h4>
         </div>
     </div>
     <!--end of last page  -->
     <!--end of questions page -->
+
+    <!-- start of deadlines -->
+    <div class="jumbotron" id="question12">
+        <div class="container">
+            <h1 class="display-4">Important Deadlines</h1>
+            <iframe src="https://calendar.google.com/calendar/embed?src=4viirlf6cosro8a9lg6i48496s%40group.calendar.google.com&ctz=America/New_York"
+                style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <!-- end of deadlines -->
+    <!--start of footer  -->
     <footer class="footer">
         <div class="container">
             <p>
@@ -534,7 +539,7 @@
             </p>
         </div>
     </footer>
-
+<!--end of footer  -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

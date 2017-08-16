@@ -2,17 +2,29 @@
 #titlePage{
     height: 100vh;
     text-align: center;
-    background-image: url(https://ak2.picdn.net/shutterstock/videos/4004506/thumb/1.jpg);
+    background-image: url(http://www.sarpalaw.com/wordpress/wp-content/uploads/2014/05/commence20111.jpg);
     background-size:cover;
-    color: black;
     margin-bottom: -0vh;
     padding-top: 110px;
 }
+#signin{
+    color:rgb(89, 148, 241);
+}
+.display-1{
+    color: rgba(242,210,53,1);
+    font-weight: bold;
+}
 #text{
     font-size: 30px;
+    font-weight: bold;
+    color: black;
+    background: rgba(255,255,255,.5);
 }
 #subtext{
     font-size: 26px;
+    color: black;
+    background: rgba(255,255,255,.5);
+    font-weight: bold;
 }
 @media only screen and (max-width: 500px) {
     .display-1{
@@ -27,10 +39,16 @@
 }
 /*end of title page  */
 /*start of signup page  */
+#logintitle{
+    padding-bottom:10px;
+}
+#sign-in{
+    margin-bottom:10px;
+}
 #secondPage{
     height: 100vh;
     text-align: center;
-    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/8f/cf/b9/8fcfb974ea0cad3bed17dc5b6f9428aa.jpg);
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/abstract_blue_background_vector_graphic_art_569556.jpg);
     background-size:cover;
     margin-bottom: -0vh;
     padding-top: 150px;
@@ -49,12 +67,15 @@
     #password{
         font-size: 30px;
     }
+    #sign-in{
+    margin-bottom:-10px;
+    }
 }
 /*end of sign up page  */
 
 /*start of q1  */
 #question1{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color: rgb(83, 83, 247);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -78,7 +99,7 @@
 /*end of q1  */
 /*q2  */
 #question2{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(83, 127, 247);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -100,8 +121,9 @@
     }
 }
 /*q2  */
+/*q3  */
 #question3{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 153, 241);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -122,9 +144,10 @@
         font-size: 20px;
     }
 }
-
+/*q3  */
+/*q4  */
 #question4{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 180, 241);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -145,9 +168,10 @@
         font-size: 20px;
     }
 }
-
+/*q4  */
+/*q5  */
 #question5{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 206, 241);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -168,9 +192,10 @@
         font-size: 20px;
     }
 }
-
+/*q5  */
+/*q6  */
 #question6{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 239, 241);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -191,9 +216,10 @@
         font-size: 20px;
     }
 }
-
+/*q6  */
+/*q7  */
 #question7{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 241, 216);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -214,9 +240,10 @@
         font-size: 20px;
     }
 }
-
+/*q7  */
+/*q8  */
 #question8{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 241, 178);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -237,9 +264,10 @@
         font-size: 20px;
     }
 }
-
+/*q8  */
+/*q9  */
 #question9{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 241, 142);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -260,9 +288,10 @@
         font-size: 20px;
     }
 }
-
+/*q9  */
+/*q10  */
 #question10{
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
+    background-color:rgb(89, 241, 105);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
@@ -283,15 +312,30 @@
         font-size: 20px;
     }
 }
-
+/*q10  */
+/*q11  */
 #question11{
     background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+    height: 100vh;  
+}
+/*q11  */
+/*q12  */
+#question12{
+    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w );
+    background-size:cover;
+    margin-bottom: -0vh;
+    text-align: center;
 }
 
+iframe, object, embed {
+    max-width: 100%;
+    padding-bottom: 25px;
+}
+/*q12  */
 .navbar{
     background-color: rgba(255,255,255,.5);
     width: 100%; 

@@ -11,6 +11,7 @@ function hideEverything() {
     $("#question9").hide()
     $("#question10").hide()
     $("#question11").hide()
+    $("#question12").hide()
     $("#no1").hide()
     $("#no2").hide()
     $("#no3").hide()
@@ -21,6 +22,7 @@ function hideEverything() {
     $("#no8").hide()
     $("#no9").hide()
     $("#no10").hide()
+    $("#sign-out").hide()
 }
 $(hideEverything);
 function hideTitlePage() {
@@ -39,6 +41,7 @@ function hideTitlePage() {
         $("#question9").hide()
         $("#question10").hide()
         $("#question11").hide()
+        $("#question12").hide()
         $("#no1").hide()
         $("#no2").hide()
         $("#no3").hide()
@@ -50,6 +53,7 @@ function hideTitlePage() {
         $("#no9").hide()
         $("#no10").hide()
         $("#secondPage").show()
+        $("#sign-out").hide()
     })
     // end of sign in button
     // start of dealines buttton
@@ -65,6 +69,7 @@ function hideTitlePage() {
         $("#question8").hide()
         $("#question9").hide()
         $("#question10").hide()
+        $("#question11").hide()
         $("#secondPage").hide()
         $("#no1").hide()
         $("#no2").hide()
@@ -76,13 +81,13 @@ function hideTitlePage() {
         $("#no8").hide()
         $("#no9").hide()
         $("#no10").hide()
-        $("#question11").show()
+        $("#question12").show()
+        $("#sign-out").hide()
     })
     // end of dealines button
     // start of questions button
     $("#questions").click(function () {
         $("#titlePage").hide()
-        $("#question11").hide()
         $("#question2").hide()
         $("#question3").hide()
         $("#question4").hide()
@@ -92,6 +97,8 @@ function hideTitlePage() {
         $("#question8").hide()
         $("#question9").hide()
         $("#question10").hide()
+        $("#question11").hide()
+        $("#question12").hide()
         $("#secondPage").hide()
         $("#no1").hide()
         $("#no2").hide()
@@ -104,6 +111,7 @@ function hideTitlePage() {
         $("#no9").hide()
         $("#no10").hide()
         $("#question1").show()
+        $("#sign-out").hide()
     })
     // end of questions button
     // start of answers button
@@ -119,6 +127,7 @@ function hideTitlePage() {
         $("#question8").hide()
         $("#question9").hide()
         $("#question10").hide()
+        $("#question12").hide()
         $("#secondPage").hide()
         $("#no1").hide()
         $("#no2").hide()
@@ -131,6 +140,7 @@ function hideTitlePage() {
         $("#no9").hide()
         $("#no10").hide()
         $("#question11").show()
+        $("#sign-out").hide()
     })
     // end of answers button
     // end of navbar buttons
@@ -155,7 +165,6 @@ function hideTitlePage() {
         $("#question1").hide()
         $("#question2").show()
     })
-
     $("#yesbtn2").click(function () {
         $("#question2").hide()
         $("#question3").show()
@@ -234,7 +243,6 @@ function hideTitlePage() {
         $("#question7").hide()
         $("#question8").show()
     })
-
     $("#yesbtn8").click(function () {
         $("#question8").hide()
         $("#question9").show()
@@ -248,7 +256,6 @@ function hideTitlePage() {
         $("#question8").hide()
         $("#question9").show()
     })
-
     $("#yesbtn9").click(function () {
         $("#question9").hide()
         $("#question10").show()
@@ -277,17 +284,40 @@ function hideTitlePage() {
     })
 }
 $(hideTitlePage);
-
 $("#sign-in").click(function () {
     $("#secondPage").hide()
     $("#question1").show()
 })
+$("#sign-in").click(function () {
+    $("#secondPage").hide()
+    $("#question1").show()
+    $("#signin").hide()
+    $("#sign-out").show()
+})
 
+$("#sign-out").click(function () {
+    $("#secondPage").show()
+    $("#signin").show()
+    $("#sign-out").hide()
+    $("#question1").hide()
+    $("#question2").hide()
+    $("#question3").hide()
+    $("#question4").hide()
+    $("#question5").hide()
+    $("#question6").hide()
+    $("#question7").hide()
+    $("#question8").hide()
+    $("#question9").hide()
+    $("#question10").hide()
+    $("#question11").hide()
+
+
+})
+// firebase stuff
 $(function () {
     $('[data-toggle="popover"]').popover()
 })
 var database = firebase.database().ref();
-
 function save() {
     var email = $('#email').val();
     var password = $("#password").val();
