@@ -1,32 +1,56 @@
-.jumbotron{
-    height: 100vh;
-}
-
-.titlepagecontent{
-    padding-top:10vh;
-}
-
-
+/*start of title page  */
 #titlePage{
     height: 100vh;
     text-align: center;
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-spanish-sky-blue-solid-color-background.jpg);
     background-size:cover;
-    color: blue;
-    margin-bottom: -0vh;  
+    color: black;
+    margin-bottom: -0vh;
+    padding-top: 110px;
 }
-
+#text{
+    font-size: 30px;
+}
+#subtext{
+    font-size: 26px;
+}
+@media only screen and (max-width: 500px) {
+    .display-1{
+        font-size: 40px;
+    }
+    #text{
+    font-size: 25px;
+    }
+    #subtext{
+    font-size: 17px;
+    }
+}
+/*end of title page  */
+/*start of signup page  */
 #secondPage{
     height: 100vh;
     text-align: center;
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/8f/cf/b9/8fcfb974ea0cad3bed17dc5b6f9428aa.jpg);
     background-size:cover;
     margin-bottom: -0vh;
+    padding-top: 150px;
 }
 
-.signup{
-    padding-top:15vh;
+@media only screen and (max-width: 500px) {
+    .display-3{
+        font-size: 40px;
+    }
+    #t2{
+        font-size: 20px;
+    }
+    #username{
+        font-size: 30px;
+    }
+    #password{
+        font-size: 30px;
+    }
 }
+/*end of sign up page  */
 
 #question1{
     background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);

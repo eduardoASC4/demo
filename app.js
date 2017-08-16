@@ -1,4 +1,4 @@
-function hideEverything(){
+function hideEverything() {
     $("#secondPage").hide()
     $("#question1").hide()
     $("#question2").hide()
@@ -24,6 +24,116 @@ function hideEverything(){
 }
 $(hideEverything);
 function hideTitlePage() {
+    // start of navbar buttons
+    // start of sign in button
+    $("#signin").click(function () {
+        $("#titlePage").hide()
+        $("#question1").hide()
+        $("#question2").hide()
+        $("#question3").hide()
+        $("#question4").hide()
+        $("#question5").hide()
+        $("#question6").hide()
+        $("#question7").hide()
+        $("#question8").hide()
+        $("#question9").hide()
+        $("#question10").hide()
+        $("#question11").hide()
+        $("#no1").hide()
+        $("#no2").hide()
+        $("#no3").hide()
+        $("#no4").hide()
+        $("#no5").hide()
+        $("#no6").hide()
+        $("#no7").hide()
+        $("#no8").hide()
+        $("#no9").hide()
+        $("#no10").hide()
+        $("#secondPage").show()
+    })
+    // end of sign in button
+    // start of dealines buttton
+    $("#deadlines").click(function () {
+        $("#titlePage").hide()
+        $("#question1").hide()
+        $("#question2").hide()
+        $("#question3").hide()
+        $("#question4").hide()
+        $("#question5").hide()
+        $("#question6").hide()
+        $("#question7").hide()
+        $("#question8").hide()
+        $("#question9").hide()
+        $("#question10").hide()
+        $("#secondPage").hide()
+        $("#no1").hide()
+        $("#no2").hide()
+        $("#no3").hide()
+        $("#no4").hide()
+        $("#no5").hide()
+        $("#no6").hide()
+        $("#no7").hide()
+        $("#no8").hide()
+        $("#no9").hide()
+        $("#no10").hide()
+        $("#question11").show()
+    })
+    // end of dealines button
+    // start of questions button
+    $("#questions").click(function () {
+        $("#titlePage").hide()
+        $("#question11").hide()
+        $("#question2").hide()
+        $("#question3").hide()
+        $("#question4").hide()
+        $("#question5").hide()
+        $("#question6").hide()
+        $("#question7").hide()
+        $("#question8").hide()
+        $("#question9").hide()
+        $("#question10").hide()
+        $("#secondPage").hide()
+        $("#no1").hide()
+        $("#no2").hide()
+        $("#no3").hide()
+        $("#no4").hide()
+        $("#no5").hide()
+        $("#no6").hide()
+        $("#no7").hide()
+        $("#no8").hide()
+        $("#no9").hide()
+        $("#no10").hide()
+        $("#question1").show()
+    })
+    // end of questions button
+    // start of answers button
+    $("#answers").click(function () {
+        $("#titlePage").hide()
+        $("#question1").hide()
+        $("#question2").hide()
+        $("#question3").hide()
+        $("#question4").hide()
+        $("#question5").hide()
+        $("#question6").hide()
+        $("#question7").hide()
+        $("#question8").hide()
+        $("#question9").hide()
+        $("#question10").hide()
+        $("#secondPage").hide()
+        $("#no1").hide()
+        $("#no2").hide()
+        $("#no3").hide()
+        $("#no4").hide()
+        $("#no5").hide()
+        $("#no6").hide()
+        $("#no7").hide()
+        $("#no8").hide()
+        $("#no9").hide()
+        $("#no10").hide()
+        $("#question11").show()
+    })
+    // end of answers button
+    // end of navbar buttons
     $("#jumbotronBtn").click(function () {
         $("#titlePage").hide()
         $("#secondPage").show()
@@ -45,7 +155,7 @@ function hideTitlePage() {
         $("#question1").hide()
         $("#question2").show()
     })
-    
+
     $("#yesbtn2").click(function () {
         $("#question2").hide()
         $("#question3").show()
@@ -124,7 +234,7 @@ function hideTitlePage() {
         $("#question7").hide()
         $("#question8").show()
     })
-    
+
     $("#yesbtn8").click(function () {
         $("#question8").hide()
         $("#question9").show()
@@ -138,7 +248,7 @@ function hideTitlePage() {
         $("#question8").hide()
         $("#question9").show()
     })
-    
+
     $("#yesbtn9").click(function () {
         $("#question9").hide()
         $("#question10").show()
@@ -151,7 +261,7 @@ function hideTitlePage() {
     $("#nextbtn9").click(function () {
         $("#question9").hide()
         $("#question10").show()
-    }) 
+    })
     $("#yesbtn10").click(function () {
         $("#question10").hide()
         $("#question11").show()
@@ -164,9 +274,13 @@ function hideTitlePage() {
     $("#nextbtn10").click(function () {
         $("#question10").hide()
         $("#question11").show()
-    }) 
+    })
 }
 $(hideTitlePage);
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
 
 var database = firebase.database().ref();
 

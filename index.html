@@ -18,86 +18,64 @@
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-light ">
             <a class="navbar-brand" href="https://eduardoasc4.github.io/demo/.">Wisdom4College</a>
-            <a class="navbar-brand" href="#">Sign in</a>
-            <a class="navbar-brand" href="#">Sign up</a>
+            <a class="navbar-brand" href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="About Us" data-content="We are students part of the All Star Code Summer Intensive of 2017 and this is our final 'demo-day' project. Our names are Eduardo, Ifte and Malaki and we hope you find this useful.">About Us</a>
+            <a class="navbar-brand" href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="Credits" data-content="All of this was possibble through the All Star Code program and our instructors. All information was derived using our own minds or through the links provided on each question.">Credits</a>
+            <a class="navbar-brand" href="#" id="signin">Sign in</a>
+            <a class="navbar-brand" href="#" id="deadlines">Deadlines</a>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
                 More...
-            </button>
+                </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Questions</a>
-                    <a class="dropdown-item" href="#">Answer</a>
-                    <a class="dropdown-item" href="#">Credit</a>
-                    <a class="dropdown-item" href="#">About Us</a>
-                </div>
-        </nav>
-        </div>
-        <!-- end of navbar -->
-
-        <!-- start of titlepage jumbotron  -->
-        <div class="jumbotron jumbotron-fluid" id="titlePage">
-            <div class="titlepagecontent">
-                <!--start of grid for title  -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col-md-auto">
-                            <h1 class="t">Wisdom4College</h1>
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-                <!--end of grid for title  -->
-                <!--start of grid for title page content  -->
-                <div class="container">
-                    <hr class="my-4">
-                    <p class="lead">Need help with college? Wisdom4College is here for you!
-                    </p>
-                    <p>Wisdom4College is a small, easy quiz both for parents and students who are new to the college process.
-                        At the end, with the information collected with the questions, we display a series of steps and links
-                        for you to get started!</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" id="jumbotronBtn" href="#" role="button">Start Now</a>
-                    </p>
+                    <a class="dropdown-item" href="#" id="questions">Questions</a>
+                    <a class="dropdown-item" href="#" id="answers">Answers</a>
                 </div>
             </div>
-        </div>
-        <!-- end of grid for title page content -->
+        </nav>
     </div>
+    <!-- end of navbar -->
+
+    <!-- start of titlepage jumbotron  -->
+    <div class="jumbotron-fluid" id="titlePage">
+        <div class="container">
+            <h1 class="display-1">Wisdom4College</h1>
+            <hr class="my-4">
+            <p class="lead" id="text">Need help with college? Wisdom4College is here for you!
+            </p>
+            <p id="subtext">Wisdom4College is a small, easy quiz both for parents and students who are new to the college process. At the
+                end, with the information collected with the questions, we display a series of steps and links for you to
+                get started!</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" id="jumbotronBtn" href="#" role="button">Start Now</a>
+            </p>
+        </div>
     </div>
     <!-- end of titlepage jumbotron  -->
 
-<div class="jumbotron jumbotron-fluid" id="secondPage">
     <!--start of signup jumbotron-->
-    <div class="container">
-        <!--start of signup grid  -->
-        <div class="row signup">
+    <div class="jumbotron-fluid" id="secondPage">
+        <div class="container">
             <div class="log-form">
-                <h2>Login to your account</h2>
-                <form>
-                    <input id="username" type="text" title="username" placeholder="Username" />
-                    <input id="password" type="password" title="username" placeholder="Password" />
-                    <button type="submit" onclick="save()" class="btn">Login</button>
-                    <h1>OR</h1>
-                    <button type="button" class="btn btn-primary" id="guest">Continue As Guest</button>
-                </form>
+                <h1 class="display-3">Login to your account</h1>
+                <!-- start of log form -->
+                <h2>
+                    <form>
+                        <input id="username" type="text" title="username" placeholder="Username" />
+                        <input id="password" type="password" title="username" placeholder="Password" />
+                        <button type="submit" onclick="save()" class="btn">Login</button>
+                        <h1>OR</h1>
+                        <button type="button" class="btn btn-primary" id="guest">Continue As Guest</button>
+                    </form>
+                    <p1 id="t2"> Remember To Answer Honestly </p1>
+                </h2>
             </div>
             <!--end log form -->
         </div>
-        <!--end of signup grid  -->
     </div>
-    <div class="container">
-        <div class="col"></div>
-        <div class="col-md-auto">
-            <p1> Remember To Answer Honestly </p1>
-        </div>
-    </div>
-</div>
     <!-- end of signup jumbotron  -->
 
     <!-- start of questions page-->
-
     <!--start of question one-->
     <div class="jumbotron jumbotron-fluid" id="question1">
         <div class="container">
@@ -118,7 +96,8 @@
                 <div class="col-2" id="yes1"></div>
                 <div class="col-8" id="no1">
                     <p>Hint: You can apply to colleges throught their website and filling out their application or the common
-                        app.</p>
+                        app.
+                    </p>
                     <a href="http://www.commonapp.org/" class="badge badge" target="blank">Learn more about the Common app</a>
                     <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn">Next</button>
@@ -158,7 +137,8 @@
                 <div class="col-8" id="no2">
                     <p>Hint: There are various degrees, but the B.A. (Bachelor of Arts) and B.S. (Bachelor of Science) are the
                         most popular ones.</p>
-                    <a href="https://bigfuture.collegeboard.org/find-colleges/college-101/quick-guide-your-college-degree-options" class="badge badge" target="blank">Learn more about college degrees</a>
+                    <a href="https://bigfuture.collegeboard.org/find-colleges/college-101/quick-guide-your-college-degree-options" class="badge badge"
+                        target="blank">Learn more about college degrees</a>
                     <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn2">Next</button>
                 </div>
@@ -384,7 +364,8 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes8"></div>
                 <div class="col-8" id="no8">
-                    <p>Hint: Finding the perfect college for you can be done by thinking about what you would like for a college to be like.</p>
+                    <p>Hint: Finding the perfect college for you can be done by thinking about what you would like for a college
+                        to be like.</p>
                     <a href="https://bigfuture.collegeboard.org/college-search" class="badge badge" target="blank">Learn more about finding a college for you</a>
                     <p>or</p>
                     <button type="button" class="btn btn-info" id="nextbtn8">Next</button>
@@ -502,8 +483,8 @@
 
             <!--start of progress bar  -->
             <div class="progress">
-                <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100" style="width: 100%">100%</div>
+                <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 100%">100%</div>
             </div>
             <!--end of progress bar  -->
         </div>
