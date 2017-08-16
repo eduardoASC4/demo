@@ -278,25 +278,22 @@ function hideTitlePage() {
 }
 $(hideTitlePage);
 
+$("#sign-in").click(function () {
+    $("#secondPage").hide()
+    $("#question1").show()
+})
+
 $(function () {
     $('[data-toggle="popover"]').popover()
 })
-
 var database = firebase.database().ref();
 
 function save() {
-    var username = $('#username').val();
+    var email = $('#email').val();
     var password = $("#password").val();
-    console.log(username + " " + password);
-
     var value = {
-        USERNAME: username,
+        EMAIL: email,
         PASSWORD: password
     }
     database.push(value);
 }
-database.on("child_added", function (rowData) {
-    var row = rowData.val();
-    var username = row.USERNAME;
-    var password = row.PASSWORD;
-});

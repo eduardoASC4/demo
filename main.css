@@ -2,7 +2,7 @@
 #titlePage{
     height: 100vh;
     text-align: center;
-    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-spanish-sky-blue-solid-color-background.jpg);
+    background-image: url(https://ak2.picdn.net/shutterstock/videos/4004506/thumb/1.jpg);
     background-size:cover;
     color: black;
     margin-bottom: -0vh;
@@ -52,84 +52,236 @@
 }
 /*end of sign up page  */
 
+/*start of q1  */
 #question1{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
 }
-
+#nextbtn{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint1{
+        font-size: 25px;
+    }
+    #link1{
+        font-size: 20px;
+    }
+    #nextbtn{
+        font-size: 25px;
+    }
+}
+/*end of q1  */
+/*q2  */
 #question2{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
 }
-
+#nextbtn2{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint2{
+        font-size: 25px;
+    }
+    #link2{
+        font-size: 20px;
+    }
+    #nextbtn2{
+        font-size: 20px;
+    }
+}
+/*q2  */
 #question3{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn3{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint3{
+        font-size: 25px;
+    }
+    #link3{
+        font-size: 20px;
+    }
+    #nextbtn3{
+        font-size: 20px;
+    }
 }
 
 #question4{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn4{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint4{
+        font-size: 25px;
+    }
+    #link4{
+        font-size: 20px;
+    }
+    #nextbtn4{
+        font-size: 20px;
+    }
 }
 
 #question5{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn5{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint5{
+        font-size: 25px;
+    }
+    #link5{
+        font-size: 20px;
+    }
+    #nextbtn5{
+        font-size: 20px;
+    }
 }
 
 #question6{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn6{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint6{
+        font-size: 25px;
+    }
+    #link6{
+        font-size: 20px;
+    }
+    #nextbtn6{
+        font-size: 20px;
+    }
 }
 
 #question7{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn7{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint7{
+        font-size: 25px;
+    }
+    #link7{
+        font-size: 20px;
+    }
+    #nextbtn7{
+        font-size: 20px;
+    }
 }
 
 #question8{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn8{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint8{
+        font-size: 20px;
+    }
+    #link8{
+        font-size: 18px;
+    }
+    #nextbtn8{
+        font-size: 20px;
+    }
 }
 
 #question9{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
 }
+#nextbtn9{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint9{
+        font-size: 25px;
+    }
+    #link9{
+        font-size: 20px;
+    }
+    #nextbtn9{
+        font-size: 20px;
+    }
+}
 
 #question10{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-purple-solid-color-background.jpg);
     background-size:cover;
+    height: 100vh;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
+}
+#nextbtn10{
+    font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+    #hint10{
+        font-size: 25px;
+    }
+    #link10{
+        font-size: 20px;
+    }
+    #nextbtn10{
+        font-size: 20px;
+    }
 }
 
 #question11{

@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="logo.png" />
+    <!-- firebase stuff -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDYbaHiK8bv0UXsc1uigxe0yOoDRPBrxfA",
+            authDomain: "college-ready-now.firebaseapp.com",
+            databaseURL: "https://college-ready-now.firebaseio.com",
+            projectId: "college-ready-now",
+            storageBucket: "college-ready-now.appspot.com",
+            messagingSenderId: "773022874628"
+        };
+        firebase.initializeApp(config);
+
+    </script>
 </head>
 
 <body>
@@ -61,9 +77,9 @@
                 <!-- start of log form -->
                 <h2>
                     <form>
-                        <input id="username" type="text" title="username" placeholder="Username" />
-                        <input id="password" type="password" title="username" placeholder="Password" />
-                        <button type="submit" onclick="save()" class="btn">Login</button>
+                        <input id="email" type="text" placeholder="Email..." />
+                        <input id="password" type="password" placeholder="Password..." />
+                        <button type="submit" onclick="save()" class="btn" id="sign-in">Login</button>
                         <h1>OR</h1>
                         <button type="button" class="btn btn-primary" id="guest">Continue As Guest</button>
                     </form>
@@ -79,7 +95,7 @@
     <!--start of question one-->
     <div class="jumbotron jumbotron-fluid" id="question1">
         <div class="container">
-            <h1>Do you know how to apply for college?</h1>
+            <h1 class="display-3">Do you know how to apply for college?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -95,11 +111,13 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes1"></div>
                 <div class="col-8" id="no1">
-                    <p>Hint: You can apply to colleges throught their website and filling out their application or the common
+                    <h1 id="hint1">Hint: You can apply to colleges throught their website and filling out their application or the common
                         app.
-                    </p>
-                    <a href="http://www.commonapp.org/" class="badge badge" target="blank">Learn more about the Common app</a>
-                    <p>or</p>
+                    </h1>
+                    <h1 id="link1">
+                        <a href="http://www.commonapp.org/" class="badge badge" target="blank">Learn more about the Common app</a>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -119,7 +137,7 @@
     <!--start of question two-->
     <div class="jumbotron jumbotron-fluid" id="question2">
         <div class="container">
-            <h1>How familiar are you with the type of college degrees?</h1>
+            <h1 class="display-3">How familiar are you with the type of college degrees?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -135,12 +153,14 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes2"></div>
                 <div class="col-8" id="no2">
-                    <p>Hint: There are various degrees, but the B.A. (Bachelor of Arts) and B.S. (Bachelor of Science) are the
+                    <h1 id="hint2">Hint: There are various degrees, but the B.A. (Bachelor of Arts) and B.S. (Bachelor of Science) are the
                         most popular ones.</p>
-                    <a href="https://bigfuture.collegeboard.org/find-colleges/college-101/quick-guide-your-college-degree-options" class="badge badge"
-                        target="blank">Learn more about college degrees</a>
-                    <p>or</p>
-                    <button type="button" class="btn btn-info" id="nextbtn2">Next</button>
+                        <h1 id="link2">
+                            <a href="https://bigfuture.collegeboard.org/find-colleges/college-101/quick-guide-your-college-degree-options" class="badge badge"
+                                target="blank">Learn more about college degrees</a>
+                        </h1>
+                        <h3>or</h3>
+                        <button type="button" class="btn btn-info" id="nextbtn2">Next</button>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -159,7 +179,7 @@
     <!--start of question three-->
     <div class="jumbotron jumbotron-fluid" id="question3">
         <div class="container">
-            <h1>Do you know the difference between a major and a minor?</h1>
+            <h1 class="display-3">Do you know the difference between a major and a minor?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -175,9 +195,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes3"></div>
                 <div class="col-8" id="no3">
-                    <p>Hint: Majors are the ones which you will get the most invested on.</p>
+                    <h1 id="hint3">Hint: Majors are the ones which you will get the most invested on.</h1>
+                    <h1 id="link3">
                     <a href="http://classroom.synonym.com/major-vs-minor-college-degrees-4157.html" class="badge badge" target="blank">Learn more about majors and minors</a>
-                    <p>or</p>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn3">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -197,7 +219,7 @@
     <!--start of question four-->
     <div class="jumbotron jumbotron-fluid" id="question4">
         <div class="container">
-            <h1>Do you know the what is early action and early decision?</h1>
+            <h1 class="display-3">Do you know the what is early action and early decision?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -212,9 +234,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes4"></div>
                 <div class="col-8" id="no4">
-                    <p>Hint: They both let you apply early.</p>
+                    <h1 id="hint4">Hint: They both let you apply early.</h1>
+                    <h1 id="link4">
                     <a href="https://professionals.collegeboard.org/guidance/applications/early" class="badge badge" target="blank">Learn more about early decision/action</a>
-                    <p>or</p>
+                    <h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn4">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -234,7 +258,7 @@
     <!--start of question five-->
     <div class="jumbotron jumbotron-fluid" id="question5">
         <div class="container">
-            <h1>How familiar are you with the college requirements?</h1>
+            <h1 class="display-3">How familiar are you with the college requirements?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -250,9 +274,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes5"></div>
                 <div class="col-8" id="no5">
-                    <p>Hint: There are many depending on colleges.</p>
+                    <h1 id="hint5">Hint: There are many depending on colleges.</h1>
+                    <h1 id="link5">
                     <a href="http://www.colleges.com/admissions/articles/require.html" class="badge badge" target="blank">See an example of college requirements</a>
-                    <p>or</p>
+                    <h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn5">Next</button>
                 </div>
             </div>
@@ -272,7 +298,7 @@
     <!--start of question six-->
     <div class="jumbotron jumbotron-fluid" id="question6">
         <div class="container">
-            <h1>How much do you know about financial aid?</h1>
+            <h1 class="display-3">How much do you know about financial aid?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -288,9 +314,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes6"></div>
                 <div class="col-8" id="no6">
-                    <p>Hint: Financial aid is a huge topic, but it starts with the FAFSA...</p>
+                    <h1 id="hint6">Hint: Financial aid is a huge topic, but it starts with the FAFSA...</h1>
+                    <h1 id="link6">
                     <a href="https://fafsa.ed.gov/" class="badge badge" target="blank">Learn more about the FAFSA</a>
-                    <p>or</p>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn6">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -310,7 +338,7 @@
     <!--start of question seven-->
     <div class="jumbotron jumbotron-fluid" id="question7">
         <div class="container">
-            <h1>Scholarships can be tough to get around. Do you know how to find them?</h1>
+            <h1 class="display-3">Scholarships can be tough to get around. Do you know how to find them?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -326,9 +354,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes7"></div>
                 <div class="col-8" id="no7">
-                    <p>Hint: There are almost endless oportunities for scholarships!</p>
+                    <h1 id="hint7">Hint: There are almost endless oportunities for scholarships!</h1>
+                    <h1 id="link7">
                     <a href="https://www.scholarships.com/" class="badge badge" target="blank">Learn more about finding scholarships</a>
-                    <p>or</p>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn7">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -348,7 +378,7 @@
     <!--start of question eight-->
     <div class="jumbotron jumbotron-fluid" id="question8">
         <div class="container">
-            <h1>Do you know how to decide which college is best for you?</h1>
+            <h1 class="display-3">Do you know how to decide which college is best for you?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -364,10 +394,12 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes8"></div>
                 <div class="col-8" id="no8">
-                    <p>Hint: Finding the perfect college for you can be done by thinking about what you would like for a college
-                        to be like.</p>
+                    <h1 id="hint8">Hint: Finding the perfect college for you can be done by thinking about what you would like for a college
+                        to be like.</h1>
+                        <h1 id="link8">
                     <a href="https://bigfuture.collegeboard.org/college-search" class="badge badge" target="blank">Learn more about finding a college for you</a>
-                    <p>or</p>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn8">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -387,7 +419,7 @@
     <!--start of question nine-->
     <div class="jumbotron jumbotron-fluid" id="question9">
         <div class="container">
-            <h1>How prepared do you think you are for interviews?</h1>
+            <h1 class="display-3">How prepared do you think you are for interviews?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -403,9 +435,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes9"></div>
                 <div class="col-8" id="no9">
-                    <p>Hint: Interviews are just like talking to someone else, mostly about yourself though.</p>
+                    <h1 id="hint9">Hint: Interviews are just like talking to someone else, mostly about yourself though.</h1>
+                    <h1 id="link9">
                     <a href="https://bigfuture.collegeboard.org/get-in/interviews/college-interviews-the-basics" class="badge badge" target="blank">Learn more about college interviews</a>
-                    <p>or</p>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn9">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -425,7 +459,7 @@
     <!--start of question ten-->
     <div class="jumbotron jumbotron-fluid" id="question10">
         <div class="container">
-            <h1>How aware are you deadlines in the college process?</h1>
+            <h1 class="display-3">How aware are you deadlines in the college process?</h1>
             <div class="row">
                 <div class="col"></div>
                 <div class="col-md-auto">
@@ -441,9 +475,11 @@
                 <!--start of hidden results-->
                 <div class="col-2" id="yes10"></div>
                 <div class="col-8" id="no10">
-                    <p>Hint: There are many deadlines to keep track of, but a calendar might help...</p>
+                    <h1 id="hint10">Hint: There are many deadlines to keep track of, but a calendar might help...</h1>
+                    <h1 id="link10">
                     <a href="http://www.collegesimply.com/guides/application-deadlines/" class="badge badge" target="blank">Learn more about college deadlines</a>
-                    <p>or</p>
+                    </h1>
+                    <h3>or</h3>
                     <button type="button" class="btn btn-info" id="nextbtn10">Next</button>
                 </div>
                 <div class="col-2"></div>
@@ -494,7 +530,7 @@
     <footer class="footer">
         <div class="container">
             <p>
-                &copy; lmaolmaoolmaoolmaoolmaoolmaoo
+                &copy; Wisdom4College 2017
             </p>
         </div>
     </footer>
