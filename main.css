@@ -2,13 +2,15 @@
 #titlePage{
     height: 100vh;
     text-align: center;
-    background-image: url(http://www.sarpalaw.com/wordpress/wp-content/uploads/2014/05/commence20111.jpg);
-    background-size:cover;
+    background-image: url("http://www.sarpalaw.com/wordpress/wp-content/uploads/2014/05/commence20111.jpg");
+    background-size:cover; 
     margin-bottom: -0vh;
     padding-top: 110px;
 }
-#signin{
-    color:rgb(89, 148, 241);
+
+#navbrand{
+    color: rgba(242,210,53,1);
+    font-weight:bold;
 }
 .display-1{
     color: rgba(242,210,53,1);
@@ -35,6 +37,9 @@
     }
     #subtext{
     font-size: 17px;
+    }
+    #navbrand{
+    font-weight:normal;
     }
 }
 /*end of title page  */
@@ -329,6 +334,15 @@
     background-size:cover;
     margin-bottom: -0vh;
     text-align: center;
+}
+
+#deadlinetitle{
+    padding-bottom:4px;
+}
+@media only screen and (max-width: 500px){
+    #deadlinetitle{
+        padding-top:55px;
+    }
 }
 
 iframe, object, embed {
