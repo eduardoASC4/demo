@@ -7,7 +7,6 @@
     margin-bottom: -0vh;
     padding-top: 110px;
 }
-
 #navbrand{
     color: rgba(242,210,53,1);
     font-weight:bold;
@@ -58,7 +57,6 @@
     margin-bottom: -0vh;
     padding-top: 150px;
 }
-
 @media only screen and (max-width: 500px) {
     .display-3{
         font-size: 40px;
@@ -66,26 +64,30 @@
     #t2{
         font-size: 20px;
     }
-    #username{
+    #email{
         font-size: 30px;
     }
     #password{
         font-size: 30px;
+        margin-top: 10px;
     }
     #sign-in{
-    margin-bottom:-10px;
+        margin-bottom:-10px;
     }
 }
 /*end of sign up page  */
-
 /*start of q1  */
 #question1{
     background-color: rgb(83, 83, 247);
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
+    
+}
+#q1{
+    padding-bottom: 20px;
 }
 #nextbtn{
     font-size: 30px;
@@ -100,6 +102,13 @@
     #nextbtn{
         font-size: 25px;
     }
+    #nobtn{
+        margin-top: 15px;
+    }
+    #yesbtn{
+        margin-top: 15px;
+    }
+   
 }
 /*end of q1  */
 /*q2  */
@@ -108,11 +117,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
 }
 #nextbtn2{
     font-size: 30px;
+}
+#q2{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint2{
@@ -124,6 +136,12 @@
     #nextbtn2{
         font-size: 20px;
     }
+    #nobtn2{
+        margin-top: 15px;
+    }
+    #yesbtn2{
+        margin-top: 15px;
+    }
 }
 /*q2  */
 /*q3  */
@@ -132,11 +150,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
 }
 #nextbtn3{
     font-size: 30px;
+}
+#q3{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint3{
@@ -148,6 +169,12 @@
     #nextbtn3{
         font-size: 20px;
     }
+    #nobtn3{
+        margin-top: 15px;
+    }
+    #yesbtn3{
+        margin-top: 15px;
+    }
 }
 /*q3  */
 /*q4  */
@@ -156,11 +183,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
 }
 #nextbtn4{
     font-size: 30px;
+}
+#q4{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint4{
@@ -172,6 +202,12 @@
     #nextbtn4{
         font-size: 20px;
     }
+    #nobtn4{
+        margin-top: 15px;
+    }
+    #yesbtn4{
+        margin-top: 15px;
+    }
 }
 /*q4  */
 /*q5  */
@@ -180,11 +216,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
 }
 #nextbtn5{
     font-size: 30px;
+}
+#q5{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint5{
@@ -196,6 +235,12 @@
     #nextbtn5{
         font-size: 20px;
     }
+    #nobtn5{
+        margin-top: 15px;
+    }
+    #yesbtn5{
+        margin-top: 15px;
+    }
 }
 /*q5  */
 /*q6  */
@@ -204,11 +249,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
 }
 #nextbtn6{
     font-size: 30px;
+}
+#q6{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint6{
@@ -220,6 +268,12 @@
     #nextbtn6{
         font-size: 20px;
     }
+    #nobtn6{
+        margin-top: 15px;
+    }
+    #yesbt6{
+        margin-top: 15px;
+    }
 }
 /*q6  */
 /*q7  */
@@ -228,11 +282,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
 }
 #nextbtn7{
     font-size: 30px;
+}
+#q7{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint7{
@@ -244,6 +301,12 @@
     #nextbtn7{
         font-size: 20px;
     }
+    #nobtn7{
+        margin-top: 15px;
+    }
+    #yesbtn7{
+        margin-top: 15px;
+    }
 }
 /*q7  */
 /*q8  */
@@ -252,8 +315,11 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
+}
+#q8{
+    padding-bottom: 20px;
 }
 #nextbtn8{
     font-size: 30px;
@@ -268,6 +334,12 @@
     #nextbtn8{
         font-size: 20px;
     }
+    #nobtn8{
+        margin-top: 15px;
+    }
+    #yesbtn8{
+        margin-top: 15px;
+    }
 }
 /*q8  */
 /*q9  */
@@ -276,11 +348,14 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top: 25vh;
     text-align: center;
 }
 #nextbtn9{
     font-size: 30px;
+}
+#q9{
+    padding-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
     #hint9{
@@ -292,6 +367,12 @@
     #nextbtn9{
         font-size: 20px;
     }
+    #nobtn9{
+        margin-top: 15px;
+    }
+    #yesbtn9{
+        margin-top: 15px;
+    }
 }
 /*q9  */
 /*q10  */
@@ -300,8 +381,11 @@
     background-size:cover;
     height: 100vh;
     margin-bottom: -0vh;
-    padding-top:15vh;
+    padding-top:25vh;
     text-align: center;
+}
+#q10{
+    padding-bottom: 20px;
 }
 #nextbtn10{
     font-size: 30px;
@@ -316,6 +400,12 @@
     #nextbtn10{
         font-size: 20px;
     }
+    #nobtn10{
+        margin-top: 15px;
+    }
+    #yesbtn10{
+        margin-top: 15px;
+    }
 }
 /*q10  */
 /*q11  */
@@ -325,8 +415,7 @@
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
-    height:100vh;
-    color:rgb(94, 136, 226);
+    color:black;
 }
 .end{
     padding-bottom:50px;
@@ -344,7 +433,6 @@
     margin-bottom: -0vh;
     text-align: center;
 }
-
 #deadlinetitle{
     padding-bottom:4px;
 }
@@ -353,27 +441,41 @@
         padding-top:55px;
     }
 }
-
 iframe, object, embed {
     max-width: 100%;
     padding-bottom: 25px;
 }
 /*q12  */
+/* q13 */
+#question13{
+    background-image: url(https://il9.picdn.net/shutterstock/videos/5256728/thumb/1.jpg);
+    background-size:cover;
+    margin-bottom: -0vh;
+    text-align: center;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 500px){
+    #question13{
+        padding-top: 130px;
+        margin: 0 auto;
+        font-size:20px;
+    }
+}
+/* q13 */
 .navbar{
     background-color: rgba(255,255,255,.5);
     width: 100%; 
 }
-
 .footer {
-	padding-top: 10px;
-	padding-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 3px;
     margin-top: -53px;
-	color: #99979c;
-	text-align: left;
+    color: #99979c;
+    text-align: left;
     background-color: #080808;
     width: 100%;
 }
-
 .progress{
     margin: 15px;
 }

@@ -12,6 +12,7 @@ function hideEverything() {
     $("#question10").hide()
     $("#question11").hide()
     $("#question12").hide()
+    $("#question13").hide()
     $("#no1").hide()
     $("#no2").hide()
     $("#no3").hide()
@@ -52,6 +53,7 @@ function hideTitlePage() {
         $("#question10").hide()
         $("#question11").hide()
         $("#question12").hide()
+        $("#question13").hide()
         $("#no1").hide()
         $("#no2").hide()
         $("#no3").hide()
@@ -80,6 +82,7 @@ function hideTitlePage() {
         $("#question9").hide()
         $("#question10").hide()
         $("#question11").hide()
+        $("#question13").hide()
         $("#secondPage").hide()
         $("#no1").hide()
         $("#no2").hide()
@@ -109,6 +112,7 @@ function hideTitlePage() {
         $("#question10").hide()
         $("#question11").hide()
         $("#question12").hide()
+        $("#question13").hide()
         $("#secondPage").hide()
         $("#no1").hide()
         $("#no2").hide()
@@ -137,6 +141,7 @@ function hideTitlePage() {
         $("#question8").hide()
         $("#question9").hide()
         $("#question10").hide()
+        $("#question11").hide()
         $("#question12").hide()
         $("#secondPage").hide()
         $("#no1").hide()
@@ -149,7 +154,7 @@ function hideTitlePage() {
         $("#no8").hide()
         $("#no9").hide()
         $("#no10").hide()
-        $("#question11").show()
+        $("#question13").show()
         $("#sign-out").hide()
     })
     // end of answers button
@@ -169,6 +174,7 @@ function hideTitlePage() {
     $("#nobtn").click(function () {
         $("#yesbtn").hide()
         $("#nobtn").hide()
+        $("#q1").hide()
         $("#no1").show()
         $("#end1").show()
     })
@@ -183,6 +189,7 @@ function hideTitlePage() {
     $("#nobtn2").click(function () {
         $("#yesbtn2").hide()
         $("#nobtn2").hide()
+        $("#q2").hide()
         $("#no2").show()
         $("#end2").show()
     })
@@ -197,6 +204,7 @@ function hideTitlePage() {
     $("#nobtn3").click(function () {
         $("#yesbtn3").hide()
         $("#nobtn3").hide()
+        $("#q3").hide()
         $("#no3").show()
         $("#end3").show()
     })
@@ -211,6 +219,7 @@ function hideTitlePage() {
     $("#nobtn4").click(function () {
         $("#yesbtn4").hide()
         $("#nobtn4").hide()
+        $("#q4").hide()
         $("#no4").show()
         $("#end4").show()
     })
@@ -225,6 +234,7 @@ function hideTitlePage() {
     $("#nobtn5").click(function () {
         $("#yesbtn5").hide()
         $("#nobtn5").hide()
+        $("#q5").hide()
         $("#no5").show()
         $("#end5").show()
     })
@@ -239,6 +249,7 @@ function hideTitlePage() {
     $("#nobtn6").click(function () {
         $("#yesbtn6").hide()
         $("#nobtn6").hide()
+        $("#q6").hide()
         $("#no6").show()
         $("#end6").show()
     })
@@ -253,6 +264,7 @@ function hideTitlePage() {
     $("#nobtn7").click(function () {
         $("#yesbtn7").hide()
         $("#nobtn7").hide()
+        $("#q7").hide()
         $("#no7").show()
         $("#end7").show()
     })
@@ -267,6 +279,7 @@ function hideTitlePage() {
     $("#nobtn8").click(function () {
         $("#yesbtn8").hide()
         $("#nobtn8").hide()
+        $("#q8").hide()
         $("#no8").show()
         $("#end8").show()
     })
@@ -281,6 +294,7 @@ function hideTitlePage() {
     $("#nobtn9").click(function () {
         $("#yesbtn9").hide()
         $("#nobtn9").hide()
+        $("#q9").hide()
         $("#no9").show()
         $("#end9").show()
     })
@@ -295,6 +309,7 @@ function hideTitlePage() {
     $("#nobtn10").click(function () {
         $("#yesbtn10").hide()
         $("#nobtn10").hide()
+        $("#q10").hide()
         $("#no10").show()
         $("#end10").show()
     })
@@ -329,6 +344,7 @@ $("#sign-out").click(function () {
     $("#question9").hide()
     $("#question10").hide()
     $("#question11").hide()
+    $("#question13").hide()
 })
 // firebase stuff
 $(function () {
