@@ -320,17 +320,26 @@
 /*q10  */
 /*q11  */
 #question11{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w);
+    background-image: url(https://il9.picdn.net/shutterstock/videos/5256728/thumb/1.jpg);
     background-size:cover;
     margin-bottom: -0vh;
     padding-top:15vh;
     text-align: center;
-    height: 100vh;  
+    height:100vh;
+    color:rgb(94, 136, 226);
+}
+.end{
+    padding-bottom:50px;
+}
+@media only screen and (max-width: 500px){
+    #question11{
+        height: inherit;
+    }
 }
 /*q11  */
 /*q12  */
 #question12{
-    background-image: url(https://static1.squarespace.com/static/5511a3cbe4b0748e8e710ce3/t/55de0b1be4b01adb6275b4de/1440615196690/background.jpg?format=1500w );
+    background-image: url(https://il9.picdn.net/shutterstock/videos/5256728/thumb/1.jpg);
     background-size:cover;
     margin-bottom: -0vh;
     text-align: center;
